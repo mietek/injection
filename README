@@ -1,0 +1,5 @@
+Terminal 1:
+    ./injectee
+
+Terminal 2:
+    sudo ./injector `ps | grep injectee | grep -v grep | awk '{print $1}'`
